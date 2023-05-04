@@ -1,24 +1,24 @@
 
-GET http://localhost:3001/
+GET pdhunt2-production.up.railway.app/
 ###
 
-GET http://localhost:3001/api/products
+GET pdhunt2-production.up.railway.app/api/products
 
-
-###
-
-
-GET http://localhost:3001/api/v1/notes
 
 ###
 
-POST http://localhost:3001/api/user
+
+GET pdhunt2-production.up.railway.app/api/v1/notes
+
+###
+
+POST pdhunt2-production.up.railway.app/api/user
 content-type: application/json
 
 {
-    "name": "John",
-    # "email":"test1@gmail.com",
-    "password": "123456"
+    "name": "Monty",
+    # "email":"ankit@gmail.com",
+    "password": "2654"
 
 }
 
