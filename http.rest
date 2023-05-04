@@ -1,5 +1,5 @@
 
-GET http://localhost:3001/
+GET http://0.0.0.0:3001/
 ###
 
 GET http://localhost:3001/api/products
@@ -12,13 +12,13 @@ GET http://localhost:3001/api/v1/notes
 
 ###
 
-POST http://localhost:3001/api/user
+POST https://pdhunt2-production.up.railway.app/api/user
 content-type: application/json
 
 {
-    "name": "Monty",
-     "email":"monty@gmail.com",
-    "password": "2654"
+    "name": "vinay",
+     "email":"vinay@gmail.com",
+    "password": "vs123"
 
 }
 
