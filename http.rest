@@ -12,23 +12,36 @@ GET http://localhost:3001/api/v1/notes
 
 ###
 
+# POST http://localhost:3001/api/user
+# content-type: application/json
+
+# {
+#     "email":"parteek@gmail.com",
+#     "token": "123456"
+
+# }
+
+###
+
 POST http://localhost:3001/api/user
 content-type: application/json
 
 {
-    "email":"anmol@gmail.com",
-    "token": "1234567"
+    "name": "parteek",
+    "email":"parteek@gmail.com",
+    "password": "parteek"
 
 }
-###
 
-POST https://pdhunt2-production.up.railway.app/api/user
+
+
+###
+POST http://localhost:3001/api/user
 content-type: application/json
 
 {
-    "name": "nitin",
-    "email":"monty@gmail.com",
-    "password": "nitin12"
+    
+    "email":"parteek@gmail.com"
 
 }
 
@@ -40,9 +53,9 @@ POST http://localhost:3001/api/auth/register
 content-type: application/json
 
 {
-    "name": "Anmol",
-    "email":"anmol@gmail.com",
-    "password": "password@123"
+    "name": "vaibhav",
+    "email":"vaibhav@gmail.com",
+    "password": "vaibhav"
 
 }
 
@@ -53,7 +66,7 @@ content-type: application/json
 
 {
     
-    "email":"db111211@gmail.com",
-    "password": "123456"
+    "email":"parteek@gmail.com",
+    "password": "parteek"
 
 }
