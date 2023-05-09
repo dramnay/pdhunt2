@@ -10,18 +10,6 @@ GET http://localhost:3001/api/products
 
 GET http://localhost:3001/api/v1/notes
 
-###
-
-# POST http://localhost:3001/api/user
-# content-type: application/json
-
-# {
-#     "email":"parteek@gmail.com",
-#     "token": "123456"
-
-# }
-
-###
 
 POST http://localhost:3001/api/user
 content-type: application/json
@@ -36,12 +24,118 @@ content-type: application/json
 
 
 ###
+POST http://localhost:3001/api/user/email
+content-type: application/json
+
+{  
+    "email":"anni@gmail.com"
+}
+
+
+###
+POST http://localhost:3001/api/user 
+content-type: application/json
+
+{
+"email":"anmol@gmail.com"
+}
+
+
+
+###
+POST http://localhost:3001/api/auth/signup
+content-type: application/json
+
+{
+    "name": "vs",
+    "email":"vs@gmail.com",
+    "password": "vs"
+
+}
+
+###
+POST http://localhost:3001/api/auth/signup
+content-type: application/json
+
+{
+    "name": "dr",
+    "email":"dr@gmail.com",
+    "password": "dr"
+
+}
+
+
+###
+POST http://localhost:3001/api/auth/login
+content-type: application/json
+
+{
+    "email":"vs@gmail.com",
+    "password":"vs"
+
+}
+
+###
+POST http://localhost:3001/api/auth/login
+content-type: application/json,
+
+{
+    "email":"dr@gmail.com",
+    "password":"dr"
+
+}
+
+###
+
+POST http://localhost:3001/api/user
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDU5ZWM0NDdlM2U0OGUwZWNjNDQxNzAiLCJuYW1lIjoidnMiLCJpYXQiOjE2ODM2MjY2NDEsImV4cCI6MTY4MzYzMDI0MX0.4GR-jUIRe_4WvrHFwwKhijm8fbWFoyL8P8x9ia7BNYU
+{
+"email":"vs@gmail.com"
+}
+
+
+###
+POST http://localhost:3001/api/auth/logout 
+content-type: application/json
+Authorization: Bearer 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDU5ZWM0NDdlM2U0OGUwZWNjNDQxNzAiLCJuYW1lIjoidnMiLCJpYXQiOjE2ODM2MjY5MzYsImV4cCI6MTY4MzYzMDUzNn0.IngzfXVrxNws3GIupnAc8KOpH4Pp9XAGSrKfhfSo6sc'
+
+
+
+/////////////////////////////////////////////////////
+
+
+
+GET http://localhost:3001/
+###
+
+GET http://localhost:3001/api/products
+
+
+###
+
+
+GET http://localhost:3001/api/v1/notes
+
+###
+
+POST http://localhost:3001/api/user
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVhMWNjMWM2NmNhNjZjMzYxMDU0ZGEiLCJuYW1lIjoiQW5tb2wiLCJpYXQiOjE2ODM2MjcyMDcsImV4cCI6MTY4MzYzMDgwN30.PWxWbFHVM6TemLtrVmu0hmiq_aBtuOrQHR3jnaLMB30
+{
+    "email":"anmol@gmail.com"
+    
+
+}
+###
+
 POST http://localhost:3001/api/user
 content-type: application/json
 
 {
-    
-    "email":"parteek@gmail.com"
+    "name": "db",
+    "email":"db@gmail.com",
+    "password": "123456"
 
 }
 
@@ -49,13 +143,13 @@ content-type: application/json
 
 
 ###
-POST http://localhost:3001/api/auth/register
+POST http://localhost:3001/api/auth/signup
 content-type: application/json
 
 {
-    "name": "vaibhav",
-    "email":"vaibhav@gmail.com",
-    "password": "vaibhav"
+    "name": "Anmol",
+    "email":"anmol@gmail.com",
+    "password": "password@123"
 
 }
 
@@ -66,7 +160,13 @@ content-type: application/json
 
 {
     
-    "email":"parteek@gmail.com",
-    "password": "parteek"
+    "email":"anmol@gmail.com",
+    "password": "password@123"
 
 }
+
+
+###
+POST http://localhost:3001/api/auth/logout
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVhMWNjMWM2NmNhNjZjMzYxMDU0ZGEiLCJuYW1lIjoiQW5tb2wiLCJpYXQiOjE2ODM2MjczMjYsImV4cCI6MTY4MzYzMDkyNn0.ju8q1hvEY7lRuRSX1Ymznyzv9iY10ixHbcGe8f1ggmw
